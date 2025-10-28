@@ -1,0 +1,10 @@
+^C:\USERS\19037\DESKTOP\TOOL\SPSC_QUEUE\BUILD\MSVC-VCPKG-DEBUG\CMAKEFILES\883B2EF5C7AFAD39BE53B634EEB0CE9A\GENERATE.STAMP.RULE
+setlocal
+D:\Cmake\bin\cmake.exe -SC:/Users/19037/Desktop/tool/spsc_queue -BC:/Users/19037/Desktop/tool/spsc_queue/build/msvc-vcpkg-debug --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/19037/Desktop/tool/spsc_queue/build/msvc-vcpkg-debug/my_project.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
