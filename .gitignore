@@ -1,0 +1,14 @@
+# CMake
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# VS
+*.suo
+*.user
+*.vcxproj.user
+*.pdb
+
+# vcpkg
+/vcpkg_installed/
